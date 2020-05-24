@@ -1,0 +1,54 @@
+// Global styling
+.social-media-bar {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  position: fixed !important;
+  z-index: 9999;
+  right: 0;
+  top: 50%;
+  margin-top: calc(-30vh / 2);
+}
+.menu {
+  position: relative;
+  text-decoration: none;
+  &.light {
+    color: black;
+  }
+}
+.selected {
+  color: white;
+  &.light {
+    color: white;
+  }
+}
+.selected::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 25%;
+}
+.nav-selected {
+  background-color: #f7be33;
+}
+.font-logo {
+	&.majjang {
+		font-family: "Otamendi";
+  	font-size: xx-large;
+		color: #F7BE33;
+	}
+	&.majjang::after {
+		content: "Fine foods";
+		font-family: "Gidole-Regular";
+		font-size: x-small;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		color: #F7BE33;
+		display: block;
+	}
+	&.light, &.majjang.light::after {
+		color: white;
+	}
+}
