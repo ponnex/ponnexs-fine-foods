@@ -1,4 +1,8 @@
 // Global styling
+.v-slide-group__prev, .v-slide-group__next {
+  background-color: #f7be33 !important;
+  min-width: unset !important;
+}
 .social-media-bar {
   border-top-left-radius: 5px !important;
   border-bottom-left-radius: 5px !important;

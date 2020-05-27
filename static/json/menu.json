@@ -1,0 +1,20 @@
+{
+	"success": true,
+	"data": [
+		{
+			"name": "Breakfast",
+			"description": "Provides a healthy and warm breakfast menu for the pleasure of delicious food",
+			"image": "/images/featured-menu.png"
+		},
+		{
+			"name": "Appetizer",
+			"description": "The best appetizer menu for the pleasure of delicious food",
+			"image": "/images/featured-menu.png"
+		},
+		{
+			"name": "Dinner",
+			"description": "The best dinner menu for the pleasure of delicious food",
+			"image": "/images/featured-menu.png"
+		}
+	]
+}

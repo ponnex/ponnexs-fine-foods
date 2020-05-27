@@ -23,6 +23,7 @@
     "@nuxt/typescript-build": "^0.5.6",
     "@nuxtjs/vuetify": "^1.11.2",
     "nodemon": "^1.18.9",
+    "nuxt-typed-vuex": "^0.1.18",
     "webpack": "^4.41.6"
   }
 }

@@ -32,7 +32,7 @@
         <v-app-bar-nav-icon class="d-flex d-md-none" @click.stop="isOpen = !isOpen"></v-app-bar-nav-icon>
         <v-container fluid class="pa-xs-4 pa-sm-10">
           <v-row>
-            <v-col col="8" md="2" class="text-center">
+            <v-col col="8" md="2" :class="{'text-center': $vuetify.breakpoint.mdAndUp}">
               <span class="font-logo majjang" :class="{'light': isScrolled}">Majjang's</span>
             </v-col>
             <v-col col="12" md="4" class="d-none d-md-block" align-self="center">
@@ -76,8 +76,8 @@
               </v-row>
             </v-col>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-col col="4" sm="2" class="hidden-xs-only" align-self="center" align-content="end">
-              <span>Search bar</span>
+            <v-col col="4" sm="2" class="hidden-xs-only text-right" align-self="center">
+              <span class="fas fa-search"></span>
             </v-col>
           </v-row>
         </v-container>
@@ -85,20 +85,12 @@
 
       <v-content id="main">
         <v-container v-scroll="onScroll" fluid>
-          <v-card light tile class="social-media-bar pa-2 d-none d-sm-block">
-            <v-responsive height="30vh">
-              <v-col>
-                <v-row>
-                  <n-link to="/contact">FB</n-link>
-                </v-row>
-                <v-row>
-                  <n-link to="/contact">IG</n-link>
-                </v-row>
-                <v-row>
-                  <n-link to="/contact">VB</n-link>
-                </v-row>
-              </v-col>
-            </v-responsive>
+          <v-card light tile class="social-bar pa-2 d-none d-sm-block">
+            <div class="media-container">
+							<n-link tag="i" to="/" class="fab fa-facebook-f"></n-link>
+							<n-link tag="i" to="/" class="fab fa-instagram"></n-link>
+							<n-link tag="i" to="/" class="fas fa-envelope"></n-link>
+            </div>
           </v-card>
           <nuxt />
         </v-container>
@@ -155,14 +147,29 @@ export default class Default extends Vue {
 .nav-selected {
   background-color: #f7be33;
 }
-.social-media-bar {
+.social-bar {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   position: fixed;
   z-index: 9999;
   right: 0;
   top: 50%;
-  margin-top: calc(-30vh / 2);
+	margin-top: calc(-30vh / 2);
+
+	.media-container {
+		height: 20vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    justify-content: center;
+	}
+	
+	i {
+		text-align: center;
+		font-size: 1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+	}
 }
 .body-background {
   background: rgb(53, 57, 68);

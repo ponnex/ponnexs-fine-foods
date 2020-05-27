@@ -16,6 +16,9 @@ const config: Configuration = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: "https://kit.fontawesome.com/ea4156ef84.js", crossorigin: "anonymous"}
     ]
   },
   /*
@@ -37,7 +40,8 @@ const config: Configuration = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    'nuxt-typed-vuex'
   ],
   /*
   ** Nuxt.js modules
