@@ -3,7 +3,7 @@ import { ProvidePlugin } from 'webpack'
 const colors = require('vuetify/es5/util/colors').default
 
 const config: Configuration = {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
