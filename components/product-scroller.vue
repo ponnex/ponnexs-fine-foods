@@ -13,13 +13,14 @@
 </template>
 <script lang="ts">
 import { Vue, Component } from "nuxt-property-decorator";
+const api = require('@/environment/defaults.json');
 
 @Component
 export default class ProductScroller extends Vue {
   menuData: any = [];
 
   created() {
-    this.$accessor.menu.getMenu().then((responseData: any) => {
+    this.$accessor.menu.getMenu(api).then((responseData: any) => {
       this.menuData = responseData;
     });
   }

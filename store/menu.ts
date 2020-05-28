@@ -21,9 +21,9 @@ export const mutations = mutationTree(state, {
 export const actions = actionTree(
   { state, getters, mutations },
   {
-    getMenu({ commit }) {
+    getMenu({ commit }, api) {
       return new Promise((resolve, reject) => {
-        this.$axios.get(ENDPOINTS.GETMENU).then((response) => {
+        this.$axios.get(`${api.baseUrl}/` + ENDPOINTS.GETMENU).then((response) => {
           commit('setMenu', response.data.data);
           resolve(response.data.data);
         });
