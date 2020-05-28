@@ -28,9 +28,6 @@ export default class ProductScroller extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.slider-container {
-	width: 50vw;
-}
 .category-container {
   display: inline-flex;
 	width: 300px;
