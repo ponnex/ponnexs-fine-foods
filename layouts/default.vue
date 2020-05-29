@@ -33,7 +33,7 @@
         <v-container fluid class="pa-xs-4 pa-sm-10">
           <v-row>
             <v-col col="8" md="2" :class="{'text-center': $vuetify.breakpoint.mdAndUp}">
-              <span class="font-logo majjang" :class="{'light': isScrolled}">Majjang's</span>
+              <span class="font-logo majjang" :class="{'light': isScrolled}">Ponnex's</span>
             </v-col>
             <v-col col="12" md="4" class="d-none d-md-block" align-self="center">
               <v-row>
@@ -87,9 +87,9 @@
         <v-container v-scroll="onScroll" fluid>
           <v-card light tile class="social-bar pa-2 d-none d-sm-block">
             <div class="media-container">
-							<n-link tag="i" to="/" class="fab fa-facebook-f"></n-link>
-							<n-link tag="i" to="/" class="fab fa-instagram"></n-link>
-							<n-link tag="i" to="/" class="fas fa-envelope"></n-link>
+							<a target="_blank" href="https://www.facebook.com/ponnex" class="fab fa-facebook-f"></a>
+							<a target="_blank" href="https://www.instagram.com/ponnexfpv/" class="fab fa-instagram"></a>
+							<a target="_blank" href="https://github.com/ponnex" class="fab fa-github"></a>
             </div>
           </v-card>
           <nuxt />
@@ -164,7 +164,9 @@ export default class Default extends Vue {
     justify-content: center;
 	}
 	
-	i {
+	a {
+    color: black;
+    text-decoration: none;
 		text-align: center;
 		font-size: 1.2em;
     margin-top: auto;

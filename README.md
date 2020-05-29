@@ -1,6 +1,8 @@
-# nuxt-ts-template
+# ponnex's fine foods
 
-> Nuxt Typescript Template
+> Nuxt Typescript SPA Web App inspired from [dribbble](https://dribbble.com/shots/6764812-Concept-of-website-restaurant-design) 
+
+![Image of Yaktocat](https://cdn.dribbble.com/users/2861526/screenshots/6764812/web_1920___3.jpg)
 
 ## Build Setup
 
