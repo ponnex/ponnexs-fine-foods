@@ -12,7 +12,6 @@
 	text-rendering: optimizeLegibility;
 }
 
-/* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "Otamendi";
   src: url("/fonts/Otamendi.eot"); /* IE9 Compat Modes */
@@ -24,4 +23,5 @@
     url("/fonts/Otamendi.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
+  text-rendering: optimizeLegibility;
 }
