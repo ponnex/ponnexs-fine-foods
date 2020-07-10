@@ -4,7 +4,7 @@ Nuxt Typescript SPA Web App inspired from [dribbble](https://dribbble.com/shots/
 
 ![Image of Yaktocat](https://cdn.dribbble.com/users/2861526/screenshots/6764812/web_1920___3.jpg)
 
-Click here for a [DEMO](https://blissful-pike-8519e9.netlify.app/)
+Click here for a [DEMO](https://ponnex-fine-foods.netlify.app/)
 
 ## Build Setup
 
