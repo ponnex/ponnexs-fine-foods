@@ -200,7 +200,7 @@ export default class Default extends Vue {
 @media (min-width: 960px) {
 	.home-background {
 		height: 100vh;
-		background-image: url("/images/svg/home-background.svg?inline");
+		background-image: url("~assets/images/svg/home-background.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: right;
